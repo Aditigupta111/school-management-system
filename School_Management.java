@@ -419,15 +419,26 @@ class Sign_Up extends JFrame{
     JFrame f;
     JTextField tf_schoolName, tf_Address, tf_urName, tf_email, tf_phone, tf_userName;
     JPasswordField pf, cf;
-    JLabel lb, ln, la, lpf, lcf, lun, le, lp, lusern, lr;
+    JLabel lb, ln, la, lpf, lcf, lun, le, lp, lusern, lr, li;
     JPanel p1, p2, p3, p4,pmain, p5, p6, p7, p8, p9;
     JButton b;
     JComboBox<String> roleComboBox, classGradeComboBox;
     JCheckBox termsCheckBox;
+    ImageIcon image;
 
 
     public Sign_Up(){
        f = new JFrame("School Management");
+
+
+        /*image = new ImageIcon("C:\\Users\\Lenovo\\Pictures\\cab booking system\\CAR.png");
+        //li = new JLabel(image);
+        Image img = image.getImage();
+        Image scaledimage = img.getScaledInstance(400, 300, Image.SCALE_SMOOTH);
+        ImageIcon scaledicon = new ImageIcon(scaledimage);
+        li = new JLabel(scaledicon);
+        // f.add(image);*/
+
        //text fields initialisation
        tf_schoolName = new JTextField(30);
        tf_Address = new JTextField(30);
@@ -512,20 +523,37 @@ class Sign_Up extends JFrame{
        pmain.add(p9);
 
        //Setting size of main panel  
-       pmain.setMaximumSize(new Dimension(500,300));
+       pmain.setMaximumSize(new Dimension(500,500));
 
+
+       //f.add(lb);
        //Adding features to label sign-up
-       lb.setForeground(Color.CYAN);
+       lb.setForeground(Color.BLACK);
+       lb.setFont(new Font("TImes New Roman", Font.BOLD, 24));
+       lb.setHorizontalAlignment(SwingConstants.NORTH_EAST);
+
 
        //Adding features and components to frame
        f.add(lb);
+       f.setLayout(new BorderLayout());
        f.add(pmain, BorderLayout.CENTER);
-       f.getContentPane().setBackground(Color.DARK_GRAY);
+       //f.add(li, BorderLayout.NORTH);
+       b.setPreferredSize(new Dimension(20, 10));
+       f.add(b, BorderLayout.LINE_END);
+
+       
+       f.getContentPane().setBackground(Color.WHITE);
        f.setLayout(new BoxLayout(f.getContentPane(), BoxLayout.Y_AXIS));
        
-       f.add(b);
-       f.setSize(600, 500);
+       //f.add(b);
+       //f.add(image);
+       //f.add(li);
+       //f.add(lb);
+       //f.add(pmain);
+       //f.add(b);
+       f.setSize(1000, 1000);
        f.setVisible(true);
+
 
        b.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e){
@@ -570,9 +598,10 @@ class Sign_Up extends JFrame{
        
     }
 
-public class School_Management {
+public class School_Management extends JFrame {
     public static void main(String[] args){
 
+        //ImageIcon image = new ImageIcon(CAR.png);
         Sign_Up sign = new Sign_Up();
         sign.setVisible(true);
 
