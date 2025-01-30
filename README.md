@@ -27,5 +27,9 @@ The School Management System is a GUI-based application developed using Java Swi
 - Run the School_management.java file to start the application
 
 ## Screenshots
-- ![Login Page]("Screenshots\School_1.png")
-- 
+### Sign-up Page:
+It is the entry point for users to create an account in the School Management System. It allows different types of users to register based on their role, ensuring secure authentication and personalized access to their repsective portals.
+<img src="https://github.com/Aditigupta111/school-management-system/blob/main/School_1.png" alt="Login Page" width="500">
+
+###
+
