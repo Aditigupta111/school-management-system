@@ -31,5 +31,7 @@ The School Management System is a GUI-based application developed using Java Swi
 It is the entry point for users to create an account in the School Management System. It allows different types of users to register based on their role, ensuring secure authentication and personalized access to their repsective portals.
 <img src="https://github.com/Aditigupta111/school-management-system/blob/main/School_1.png" alt="Login Page" width="500">
 
-###
+### Passwords do not match:
+If the entry in the password field does not match the entry in the confirm password field, a dialog box will appear to warn the user that the passwords do not match.
+<img src=""
 
