@@ -1,5 +1,31 @@
-The School Management System UI is a user interface designed to manage various administrative tasks in a school environment.
-This project offers a front-end solution for handling student information, teacher records, class schedules, and other essential school operations.
-This project has some other attractive features like managing attendance of students, time tables, class notes and assignments.
+# School Management System GUI (Java Swing)
+## Overview
+The School Management System is a GUI-based application developed using Java Swing. This application includes a sign-up page where different users, such as parents, teachers, students, and administrators, can sign in and perform various functionalities to manage the system. Each role has a dedicated portal with functionalities tailored to their needs.
 
-From technical point of view this whole frontent ui for school management is designed using javaFx of java language.
+## Features
+- **User Roles & Portals:**
+   - Teacher Portal: Class Schedule, Student List, Attendance, Assignment, Message, Reports
+   - Student Portal: Class Schedule, Grades, Attendance, Assignment, Message, Reports
+   - Parent Portal: Student Behaviour, Student Grades, Attendance, Fee Payment, Message, Reports
+   - Admin Portal: Student Management, Teacher Management, Class Management, Events
+- **Core Functionalities:**
+  - Sign-up/Login System - Role based authentication for secure access.
+  - Course Management - Assign and track courses for students.
+  - Attendance Tracking - Mark and view attendance records.
+  - Fee Management - Check and process fee payments.
+  - Reports - Check final result report.
+  - Class Schedule - Check schedule of classes and timetable.
+- **Tech Stack:**
+  - Frontend - Java Swing (GUI)
+  - Backend - Java (Core Java Concepts) (If Implemented)
+  - Database - MySQL (If Implemented)
+  - Tools Used - Eclipse/VsCode
+
+## Installation and Usage
+- Clone the repository
+- Open the project in your preferred Java IDE
+- Run the School_management.java file to start the application
+
+## Screenshots
+- ![Login Page]("Screenshots\School_1.png")
+- 
